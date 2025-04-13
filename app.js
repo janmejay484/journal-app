@@ -1,7 +1,7 @@
 var createError = require('http-errors');
 var express = require('express');
 const mongoose= require('mongoose');
-mongoose.connect("mongodb+srv://janmejaysi484:JpQRYsCi4oEyNmPU@journal.3fbeq.mongodb.net/?retryWrites=true&w=majority&appName=journal");
+mongoose.connect("atlas password")
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
