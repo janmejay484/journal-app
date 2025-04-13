@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  line-height: 1.6;
+  background: white;
+  color: #1e3d58;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 900px;
+}
+
+header {
+  text-align: center;
+  margin: 1em auto;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #1e3d58;
+}
+
+.section {
+  padding: 1em;
+  width: 100%;
+  margin: 1em auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 1em;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.journal-label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0.5em 0;
+  color: #1e3d58;
+}
+
+.entry-text-title,
+.entry-text-box {
+  width: 100%;
+  padding: 1em;
+  border-radius: 2px;
+  border: unset;
+  background-color: #bfeaf0; 
+  font-family: 'Space Mono', monospace;
+}
+
+.entry-text-title:focus,
+.entry-text-box:focus {
+  outline-color: #4682b4;
+  color: #4682b4;
+}
+
+.entry-text-title::placeholder,
+.entry-text-box::placeholder {
+  color: #5381a8;
+}
+
+.entry-text-box {
+  height: 10em;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5em;
+}
+
+.btn-main {
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  background-color: #46a4b4;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-main:hover {
+  background-color: #5f9ea0;
+}
+
+.cancel-btn {
+  background-color: #d9534f;
+  text-decoration: none;
+}
+
+.cancel-btn:hover {
+  background-color: #c9302c;
+}
+
+  

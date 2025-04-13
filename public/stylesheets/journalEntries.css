@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  line-height: 1.6;
+  background: white;
+  color: #1e3d58;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 900px;
+}
+
+/* Global Typography */
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #1e3d58;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #1e3d58;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+/* Section Container Positions, Spacing, Utilities */
+
+header {
+  text-align: center;
+  margin: 1em auto;
+}
+
+.section {
+  padding: 2em 1em;
+  width: 100%;
+  margin: 1em auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 1em;
+}
+
+.entry-box {
+  margin-bottom: 2em;
+  padding: 1.5em;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.entry-actions {
+  margin-top: 1.5em;
+}
+
+.entry-date {
+  font-size: 1.1rem;
+  color: #4682b4;
+}
+
+.entry-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.entry-description {
+  font-size: 1.2rem;
+  margin: 1em 0;
+}
+
+/* Button Styles */
+.btn-main {
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Space Mono', monospace;
+  text-align: center;
+  transition: all 0.2s ease;
+  width: 200px; /* Ensures both buttons are the same size */
+}
+
+.btn-main:hover {
+  transform: scale(1.05);
+}
+
+/* Edit Button Styling */
+.edit-btn {
+  background-color: #4682b4;
+}
+
+.edit-btn:hover {
+  background-color: #5f9ea0;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+  background-color: #e74c3c; /* Red color for delete button */
+}
+
+.delete-btn:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+.create-entry {
+  text-align: center;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.create-btn {
+  background-color: #4682b4;
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  display: inline-block;
+  white-space: nowrap; /* Prevents text from breaking into multiple lines */
+  letter-spacing: 0.05em; /* Adjust letter spacing for better readability */
+  min-width: 250px; /* Ensure the button is wide enough to fit text */
+  text-align: center; /* Ensure the text is centered */
+}
+
+
+.create-btn:hover {
+  background-color: #5f9ea0;
+}
+
+
+.create-btn:hover {
+  background-color: #5f9ea0;
+}
+
+@media (min-width: 769px) {
+  .entry-box {
+    max-width: 800px;
+    margin: 2em auto;
+  }
+}
+
+
+
+  
+  
