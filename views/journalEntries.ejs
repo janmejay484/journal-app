@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/journalEntries.css" />
+    <title>All Journal Entries</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">All Journal Entries</h1>
+    </header>
+
+    <!-- Journal Entries Section -->
+    <main class="section journal-section">
+      <div class="container">
+        <% if (journals && journals.length > 0) { %>
+          <% journals.forEach(function(journal) { %>
+            <article class="entry-box">
+              <div class="entry-date">Created on: <%= new Date(journal.createdAt).toLocaleDateString() %></div>
+              <h3 class="entry-title"><%= journal.title %></h3>
+              <p class="entry-description"><%= journal.description %></p>
+              <div class="entry-actions">
+                <!-- Edit Button -->
+                <a href="/edit/<%= journal._id %>" class="btn-main edit-btn" style="text-decoration: none;">Edit</a>
+
+                <!-- Delete Form -->
+                <form action="/delete/<%= journal._id %>" method="POST" style="display:inline;">
+                  <input type="hidden" name="_method" value="DELETE">
+                  <button type="submit" class="btn-main delete-btn" onclick="return confirm('Are you sure you want to delete this journal?')">Delete</button>
+                </form>
+              </div>
+            </article>
+          <% }) %>
+        <% } else { %>
+          <p>No journal entries found. Start by creating one!</p>
+        <% } %>
+      </div>
+    </main>
+
+    <!-- Link Button to Create a New Journal Entry -->
+    <div class="create-entry">
+      <a href="/journalForm" class="btn-main create-btn">Create a New Entry</a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/javascripts/script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

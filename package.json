@@ -1,0 +1,25 @@
+{
+  "name": "personaljournal",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.5.0",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-session": "^1.18.1",
+    "flash": "^1.1.0",
+    "http-errors": "~1.6.3",
+    "method-override": "^3.0.0",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.2",
+    "morgan": "~1.9.1",
+    "passport": "^0.7.0",
+    "passport-local-mongoose": "^8.0.0"
+  }
+}
